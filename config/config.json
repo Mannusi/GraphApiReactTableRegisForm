@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "registration-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/registrationForm/RegistrationFormWebPart.js",
+          "manifest": "./src/webparts/registrationForm/RegistrationFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "graph-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphApi/GraphApiWebPart.js",
+          "manifest": "./src/webparts/graphApi/GraphApiWebPart.manifest.json"
+        }
+      ]
+    },
+    "react-table-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactTable/ReactTableWebPart.js",
+          "manifest": "./src/webparts/reactTable/ReactTableWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "RegistrationFormWebPartStrings": "lib/webparts/registrationForm/loc/{locale}.js",
+    "GraphApiWebPartStrings": "lib/webparts/graphApi/loc/{locale}.js",
+    "ReactTableWebPartStrings": "lib/webparts/reactTable/loc/{locale}.js"
+  }
+}

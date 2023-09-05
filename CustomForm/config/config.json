@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "employee-onboarding-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeOnboardingForm/EmployeeOnboardingFormWebPart.js",
+          "manifest": "./src/webparts/employeeOnboardingForm/EmployeeOnboardingFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "test-dropdown-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/testDropdown/TestDropdownWebPart.js",
+          "manifest": "./src/webparts/testDropdown/TestDropdownWebPart.manifest.json"
+        }
+      ]
+    },
+    "calculator-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/calculator/CalculatorWebPart.js",
+          "manifest": "./src/webparts/calculator/CalculatorWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EmployeeOnboardingFormWebPartStrings": "lib/webparts/employeeOnboardingForm/loc/{locale}.js",
+    "TestDropdownWebPartStrings": "lib/webparts/testDropdown/loc/{locale}.js",
+    "CalculatorWebPartStrings": "lib/webparts/calculator/loc/{locale}.js"
+  }
+}

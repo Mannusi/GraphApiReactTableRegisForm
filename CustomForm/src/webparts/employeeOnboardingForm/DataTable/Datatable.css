@@ -1,0 +1,17 @@
+label.control-label-file {
+     background: url('../../Images/attache_com.png') no-repeat top left transparent; 
+    display: block;
+  
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    bottom: 12px;
+    left: 14px;
+    font-size: 0px;
+    margin: 0;
+    padding: 0;
+  }
+  label.control-label-file input{
+    opacity:0;
+  }
